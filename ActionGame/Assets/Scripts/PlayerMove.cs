@@ -47,5 +47,13 @@ public class PlayerMove : MonoBehaviour
         {
             SceneManager.LoadScene("GameClear");
         }
+        if(hit.gameObject.tag == "Ground")
+        {
+            if(Input.GetKey(KeyCode.Space))
+            {
+                rb.AddForce(0,150,0);
+            }
+
+        }
     }
 }
